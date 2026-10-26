@@ -7,6 +7,6 @@ A monorepo with three apps on two hosts: `campion-is3` and `catmint-swi` on **Ve
 
 | App | Folder | Host | Production | Preview gate |
 |---|---|---|---|---|
-| Campion | `apps/campion-is3` | Vercel | _not deployed_ | no |
-| Catmint | `apps/catmint-swi` | Vercel | _not deployed_ | no |
-| Woundwort | `apps/woundwort-h4n` | Render | _not deployed_ | no |
+| Campion | `apps/campion-is3` | Vercel | https://wold-mere-uuiu-campion-is3.vercel.app | no |
+| Catmint | `apps/catmint-swi` | Vercel | https://wold-mere-uuiu-catmint-swi.vercel.app | no |
+| Woundwort | `apps/woundwort-h4n` | Render | https://wold-mere-uuiu-woundwort-h4n.onrender.com | no |
