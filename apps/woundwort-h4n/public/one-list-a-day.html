@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One list a day · Woundwort</title>
+    <style>
+      :root {
+        font-family: system-ui, sans-serif;
+        color: #1c1c1c;
+        background: #fafaf7;
+        --accent: #b5651d;
+      }
+      body { margin: 0; }
+      header, footer { max-width: 44rem; margin: 0 auto; padding: 1.25rem 1rem; }
+      header { display: flex; justify-content: space-between; align-items: center; }
+      header a { color: var(--accent); }
+      .mark { font-weight: 700; color: var(--accent); }
+      main { max-width: 44rem; margin: 0 auto; padding: 2rem 1rem 3rem; }
+
+      /* Intentional, for Impeccable's test drive: gradient text on the heading. */
+      h1 {
+        font-size: clamp(2rem, 6vw, 3rem);
+        margin: 0 0 1rem;
+        background: linear-gradient(90deg, #b5651d, #6a2fb5);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      /* Intentional, for Impeccable's test drive: low-contrast text, light grey on the page background. */
+      .lede { color: #c9c9c4; font-size: 1.1rem; line-height: 1.5; }
+
+      /* Intentional, for Impeccable's test drive: body text flush with the viewport edge, no background or padding. */
+      .edge { margin: 2rem calc(50% - 50vw); padding: 0; line-height: 1.6; }
+
+      .steps { padding-left: 1.2rem; line-height: 1.8; }
+
+      /* Intentional, for Impeccable's test drive: a layout property in a transition. */
+      .meter { height: 0.6rem; width: 30%; background: var(--accent); border-radius: 0.3rem; transition: width 0.3s; }
+      .meter:hover { width: 90%; }
+
+      /* Intentional, for Impeccable's test drive: link text under the 11px floor. */
+      .small-link { font-size: 10px; color: var(--accent); }
+
+      footer { color: #777; font-size: 0.9rem; border-top: 1px solid #e5e5e0; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <span class="mark">Woundwort</span>
+      <a href="/">Back to today's list</a>
+    </header>
+    <main>
+      <h1>One list a day</h1>
+      <p class="lede">Today's list holds only what matters today, and nothing else.</p>
+      <p class="edge">Woundwort shows a short list for the day. Yesterday's items fall away, and tomorrow's wait their turn, so the page stays calm.</p>
+      <h2>How it stays quiet</h2>
+      <ul class="steps">
+        <li>Only today's items are shown.</li>
+        <li>Finished items are ticked, then fade from view.</li>
+        <li>There are no counters, badges or reminders.</li>
+      </ul>
+      <div class="meter" role="img" aria-label="Share of today's list finished: about a third"></div>
+      <p><a class="small-link" href="/#live">See today's list</a></p>
+    </main>
+    <footer>Woundwort · today's list and nothing else</footer>
+  </body>
+</html>
